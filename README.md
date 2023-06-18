@@ -6,26 +6,23 @@ To use Python virtual environments (virtualenv) in Linux, follow these steps:
 
 2. Install `virtualenv` package if you don't have it already. Run the following command:
 
-   ```
-   Copy code
-   pip install virtualenv
-   ```
+```bash
+pip install virtualenv
+```
 
 3. Create a new virtual environment. Navigate to the desired directory and run the following command:
 
-   ```
-   Copy code
-   virtualenv myenv
-   ```
+```bash 
+virtualenv -p python3 (or the path to the python we wish to be using) <my_env_name>
+```
 
    Replace `myenv` with the desired name for your virtual environment.
 
 4. Activate the virtual environment by running the activation script. Use the following command:
 
-   ```
-   bashCopy code
-   source myenv/bin/activate
-   ```
+```bash
+source myenv/bin/activate
+```
 
    Once activated, you should see the name of the virtual environment `(myenv)` at the beginning of the command prompt.
 
@@ -33,10 +30,9 @@ To use Python virtual environments (virtualenv) in Linux, follow these steps:
 
 6. When you're done working within the virtual environment, you can deactivate it. Simply run the following command:
 
-   ```
-   Copy code
-   deactivate
-   ```
+```bash
+deactivate
+```
 
    The virtual environment will be deactivated, and you will return to your system's default Python environment.
 
